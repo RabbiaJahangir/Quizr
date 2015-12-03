@@ -5,6 +5,14 @@
     android:orientation="vertical"
     android:weightSum="1">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CATEGORIES"
+        android:textSize="30dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="24dp"/>
+
     <Button
         android:id="@+id/java_btn"
         android:layout_width="fill_parent"
@@ -66,6 +74,15 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:text="Node.JS"
+        android:layout_weight="0.02" />
+
+    <Button
+        android:id="@+id/php_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:text="PHP"
         android:layout_weight="0.02" />
 
 </LinearLayout>

@@ -58,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
                         ServerRequest requestTask = new ServerRequest(new ServerRequest.TaskHandler() {
                             @Override
                             public boolean task() {
-                                Server comm = new Server();
+                                Server comm = new Server(thisContext);
                                 return comm.postSignup(email, password);
                             }
                         });

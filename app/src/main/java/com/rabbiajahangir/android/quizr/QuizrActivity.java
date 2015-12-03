@@ -16,6 +16,7 @@ public class QuizrActivity extends AppCompatActivity {
     private static final String TAG = "QuizrActivity";
     private Button mLoginButton;
     private Button mBecomeMember;
+    private Button testGet;
     private EditText emailEdt;
     private EditText passEdt;
     Context thisContext = this;
@@ -27,6 +28,7 @@ public class QuizrActivity extends AppCompatActivity {
 
         mLoginButton = (Button) findViewById(R.id.loginBtn);
         mBecomeMember = (Button) findViewById(R.id.becomeMemberBtn);
+        testGet = (Button) findViewById(R.id.testGet);
         emailEdt = (EditText) findViewById(R.id.emailText);
         passEdt = (EditText) findViewById(R.id.passText);
         mLoginButton.setOnClickListener(new View.OnClickListener() {
@@ -51,7 +53,7 @@ public class QuizrActivity extends AppCompatActivity {
                         ServerRequest requestTask = new ServerRequest(new ServerRequest.TaskHandler() {
                             @Override
                             public boolean task() {
-                                Server comm = new Server();
+                                Server comm = new Server(thisContext);
                                 return comm.postLogin(email, password);
                             }
                         });
@@ -84,5 +86,26 @@ public class QuizrActivity extends AppCompatActivity {
                 startActivity(signupActivity);
             }
         });
+//        testGet.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                Log.d(TAG, "testGet clicked");
+//                ServerRequest requestTask = new ServerRequest(new ServerRequest.TaskHandler() {
+//                    @Override
+//                    public boolean task() {
+//                        Server comm = new Server(thisContext);
+//                        return comm.getRequest();
+//                    }
+//                });
+//                try {
+//                    requestTask.execute().get();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                } catch (ExecutionException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
     }
 }

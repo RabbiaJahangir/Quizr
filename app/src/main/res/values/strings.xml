@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Quizr</string>
-
     <string name="email_placeholder">Email</string>
     <string name="password_placeholder">Password</string>
     <string name="password_confirmation_placeholder">Confirm Password</string>
@@ -11,10 +10,8 @@
     <string name="title_activity_signup">Signup</string>
     <string name="internet_not_connected">Please connect to the internet first!</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_categories_page">CategoriesPage</string>
-    <string name="title_activity_main">MainActivity</string>
     <string name="login_screen_btn">Have an account? Login here!</string>
+    <string name="test_get">Test Cookie GET</string>
     <string name="title_activity_splash">SplashActivity</string>
-    <string name="authenticate">Please wait..Authenticating you for awesomeness!</string>
 </resources>

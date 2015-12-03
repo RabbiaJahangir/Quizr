@@ -33,11 +33,20 @@
         android:text="@string/login_btn" />
 
     <Button
-        android:id="@+id/becomeMemberBtn"
+    android:id="@+id/becomeMemberBtn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:text="@string/become_member_btn" />
+
+    <Button
+        android:id="@+id/testGet"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:text="@string/become_member_btn" />
+        android:text="@string/test_get" />
+
 
 </LinearLayout>
